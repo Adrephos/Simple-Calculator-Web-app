@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-{% load staticfiles %}
+{% load static %}
 <html>
 <head>
 	<title>Calculator</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="{% static "css/calc.css" %}">
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
   			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -14,47 +14,47 @@
 	<div class="container">
 		<div class="jumbotron">
 			<h1 class="display-3">Calculator App</h1>
-			<p class="lead">This is a simple calculator application developed by Cavin Dsouza.</p>
+			<p class="lead">This is a simple calculator application developed by Cavin Dsouza and<br>modified by Adrephos</p>
 			<hr class="my-4">
 		</div>
 
 
-		<textarea id="resultArea" readonly rows="3" cols="21"></textarea>
+		<textarea id="resultArea" class="bg-dark text-white" readonly rows="3" cols="26"></textarea>
 
 		<table>
 			<tr>
 				<td></td>
 				<td></td>
 				<td><button id="clrTxt" class="btn btn-danger">C</button></td>
-				<td><button id="del" class="btn btn-default">&#9746;</button></td>
+				<td><button id="del" class="btn btn-dark">D</button></td>
 			</tr>
 
 			<tr>
-				<td><button id="num7" class="btn btn-default">7</button></td>
-				<td><button id="num8" class="btn btn-default">8</button></td>
-				<td><button id="num9" class="btn btn-default">9</button></td>
-				<td><button id="op3" class="btn btn-default">&div;</button></td>
+				<td><button id="num7" class="btn btn-dark">7</button></td>
+				<td><button id="num8" class="btn btn-dark">8</button></td>
+				<td><button id="num9" class="btn btn-dark">9</button></td>
+				<td><button id="op3" class="btn btn-dark">&div;</button></td>
 			</tr>
 
 			<tr>
-				<td><button id="num4" class="btn btn-default">4</button></td>
-				<td><button id="num5" class="btn btn-default">5</button></td>
-				<td><button id="num6" class="btn btn-default">6</button></td>
-				<td><button id="op2" class="btn btn-default">&times;</button></td>
+				<td><button id="num4" class="btn btn-dark">4</button></td>
+				<td><button id="num5" class="btn btn-dark">5</button></td>
+				<td><button id="num6" class="btn btn-dark">6</button></td>
+				<td><button id="op2" class="btn btn-dark">&times;</button></td>
 			</tr>
 
 			<tr>
-				<td><button id="num1" class="btn btn-default">1</button></td>
-				<td><button id="num2" class="btn btn-default">2</button></td>
-				<td><button id="num3" class="btn btn-default">3</button></td>
-				<td><button id="op1" class="btn btn-default">&minus;</button></td>
+				<td><button id="num1" class="btn btn-dark">1</button></td>
+				<td><button id="num2" class="btn btn-dark">2</button></td>
+				<td><button id="num3" class="btn btn-dark">3</button></td>
+				<td><button id="op1" class="btn btn-dark">&minus;</button></td>
 			</tr>
 
 			<tr>
-				<td><button id="decp" class="btn btn-default">.</button></td>
-				<td><button id="num0" class="btn btn-default">0</button></td>
-				<td><button id="eq" class="btn btn-default">=</button></td>
-				<td><button id="op0" class="btn btn-default">&plus;</button></td>
+				<td><button id="decp" class="btn btn-dark">.</button></td>
+				<td><button id="num0" class="btn btn-dark">0</button></td>
+				<td><button id="eq" class="btn btn-dark">=</button></td>
+				<td><button id="op0" class="btn btn-dark">&plus;</button></td>
 			</tr>
 		</table>
 	</div>
